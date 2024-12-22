@@ -1,0 +1,12 @@
+crc_trading_posts_start_effect = {
+	give_technology = {
+		message = no
+		tech = tech_space_trading
+	}
+	random_owned_starbase = {
+		set_starbase_building = {
+			slot = 1
+			building = offworld_trading_company
+		}
+	}	
+}

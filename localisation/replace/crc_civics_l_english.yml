@@ -1,0 +1,6 @@
+﻿#######################
+#    Civic Effects    #
+#######################
+
+l_english:
+    councilor_trading_posts_custom_modifier_desc:1 "- £trade_value£ Trade Value from Trade Hubs: §G+1§!"

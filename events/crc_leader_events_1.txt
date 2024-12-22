@@ -1,0 +1,68 @@
+namespace = crc_leader
+
+country_event = {
+	id = crc_leader.100
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_flag = spawning_renowned_leader }
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_valid_civic = civic_dystopian_society
+				from = { leader_class = commander }
+			}
+			from = {
+				add_trait_no_notify = leader_trait_martinet_3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = crc_leader.110
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "event triggered"
+		if = {
+		log = "if triggered"
+			limit = {
+				has_valid_civic = civic_dystopian_society
+			}
+			every_owned_leader = {
+				limit = {
+					leader_class = commander
+				}
+				add_trait_no_notify = leader_trait_martinet_3
+				log = "leader augmented"
+			}
+		}
+	}
+}
+
+leader_event = {
+	id = leader.200
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_dystopian_society
+				}
+				leader_class = commander
+			}
+			add_trait_no_notify = leader_trait_martinet_3
+		}
+	}
+}

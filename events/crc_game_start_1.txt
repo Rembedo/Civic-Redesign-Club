@@ -1,0 +1,23 @@
+namespace = crc_game_start
+
+event = {
+    id = crc_game_start.1
+    hide_window = no
+    is_triggered_only = yes
+	
+    # Immediate for event's effects
+    immediate = {
+        every_country = {
+            limit = {
+                has_civic = civic_dystopian_society
+            }
+            add_research_option = tech_penal_colonies
+        }
+		every_country = {
+			limit = {
+				has_civic = civic_trading_posts
+			}
+			crc_trading_posts_start_effect = yes
+		}
+	}
+}

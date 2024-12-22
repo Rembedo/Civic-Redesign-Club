@@ -1,0 +1,6 @@
+prefers_commander_governors = {
+	OR = {
+		has_valid_civic = civic_barbaric_despoilers
+		has_valid_civic = civic_dystopian_society
+	}
+}

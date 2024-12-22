@@ -1,4 +1,3 @@
-
 mining_drone = {
 	category = simple_drone
 	condition_string = DRONE_JOB_TRIGGER

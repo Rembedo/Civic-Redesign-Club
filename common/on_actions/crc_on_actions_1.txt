@@ -1,0 +1,16 @@
+on_game_start = {
+	events = {
+		crc_game_start.1
+	}
+}
+on_added_to_leader_pool = {
+	events = {
+		crc_leader.100
+	}
+}
+
+on_game_start_country = {
+	events = {
+		crc_leader.110
+	}
+}

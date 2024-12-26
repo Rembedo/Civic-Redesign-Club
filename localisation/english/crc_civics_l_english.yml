@@ -4,3 +4,5 @@
 
 l_english:
     civic_trading_posts_effects:0 "Start with the §H$tech_space_trading$§! technology"
+    leader_trait_node_gifted:0 "Node Optimisation"
+    leader_trait_node_gifted_desc:0 "Growth of this node's neural network has been optimised, providing greater growth potential."

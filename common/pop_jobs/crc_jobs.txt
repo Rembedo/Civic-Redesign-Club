@@ -32,7 +32,7 @@ mining_drone = {
 		potential = {
 			exists = owner
 			owner = {
-				has_valid_civic = civic_machine_rockbreaker
+				has_valid_civic = civic_machine_rockbreakers
 			}
 		}
 		planet_jobs_minerals_produces_mult = 0.01

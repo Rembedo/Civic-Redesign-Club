@@ -1,0 +1,53 @@
+leader_trait_node_gifted = {
+	force_councilor_trait = yes
+	allowed_ethics = { ethic_gestalt_consciousness }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_gifted"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	self_modifier = {
+		leader_trait_selection_options_add = 1
+	}
+	leader_class = { commander scientist official }
+	randomized = no
+}
+
+leader_trait_node_gifted_2 = {
+	force_councilor_trait = yes
+	allowed_ethics = { ethic_gestalt_consciousness }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_gifted"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leader_trait_selection_options_add = 2
+	}
+	leader_class = { commander scientist official }
+	randomized = no
+}
+
+leader_trait_node_gifted_3 = {
+	force_councilor_trait = yes
+	allowed_ethics = { ethic_gestalt_consciousness }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_gifted"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leader_trait_selection_options_add = 3
+	}
+	leader_class = { commander scientist official }
+	randomized = no
+}

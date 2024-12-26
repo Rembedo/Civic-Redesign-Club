@@ -18,6 +18,18 @@ country_event = {
 				add_trait_no_notify = leader_trait_martinet_3
 			}
 		}
+		if = {
+			limit = {
+				has_valid_civic = civic_heroic_tales
+			}
+			from = {
+				random_list = {
+				20 = { add_trait_no_notify = leader_trait_eager_2 }
+				20 = { add_trait_no_notify = leader_trait_resilient_2 }
+				20 = { add_trait_no_notify = leader_trait_adaptable_2 }
+				}
+			}
+		}
 	}
 }
 
@@ -28,9 +40,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		log = "event triggered"
 		if = {
-		log = "if triggered"
 			limit = {
 				has_valid_civic = civic_dystopian_society
 			}
@@ -39,14 +49,24 @@ country_event = {
 					leader_class = commander
 				}
 				add_trait_no_notify = leader_trait_martinet_3
-				log = "leader augmented"
+			}
+		}
+		if = {
+			limit = {
+				has_valid_civic = civic_heroic_tales
+			}
+			from = {
+				random_list = {
+				20 = { add_trait_no_notify = leader_trait_eager_2 }
+				20 = { add_trait_no_notify = leader_trait_resilient_2 }
+				20 = { add_trait_no_notify = leader_trait_adaptable_2 }
 			}
 		}
 	}
 }
 
 leader_event = {
-	id = leader.200
+	id = crc_leader.200
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -63,6 +83,18 @@ leader_event = {
 				leader_class = commander
 			}
 			add_trait_no_notify = leader_trait_martinet_3
+		}
+		if = {
+			limit = {
+				has_valid_civic = civic_heroic_tales
+			}
+			from = {
+			#	20 = { add_trait_no_notify = trait_ruler_eye_for_talent }
+			#	20 = { add_trait_no_notify = trait_ruler_champion_of_the_people }
+			#	20 = { add_trait_no_notify = leader_trait_politician }
+			#	20 = { add_trait_no_notify = trait_ruler_warlike }
+			#	20 = { add_trait_no_notify = trait_ruler_charismatic }
+			}
 		}
 	}
 }

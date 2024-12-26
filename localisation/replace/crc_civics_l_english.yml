@@ -4,3 +4,5 @@
 
 l_english:
     councilor_trading_posts_custom_modifier_desc:1 "- £trade_value£ Trade Value from Trade Hubs: §G+1§!"
+    councilor_mining_guild_custom_modifier_desc:0 "-£stability£ Stability from £job_miner£ [GetMinerPlural]: §G+$@councilor_mining_guilds_miner_stability$§!\nResource output from £job_miner£ [GetMinerPlural]: §G+5%§!"
+    civic_tooltip_natural_neural_network_effects:0 "Unemployed drones also produce £physics£ £society£ £engineering£ §YResearch Points§!\nAfter researching £society£ §Y$tech_node_culling_1$§! technology, gain increasing control of culled node's growth."
